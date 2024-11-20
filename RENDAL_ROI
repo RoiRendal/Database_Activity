@@ -1,0 +1,41 @@
+create database store;
+
+create table sarisari(
+ProductNo int primary key auto_increment,
+ProductName varchar  (30) not null,
+Price int not null,
+Quantity int not null,
+ExpiryDate date not null,
+OnSale boolean not null
+);
+
+
+insert into sarisari(ProductName,Price,Quantity,ExpiryDate,OnSale)
+values
+("Instant Noodles","10","50","2025-12-31",false),
+("Canned Sardines","25","30","2026-06-15",true),
+("Sugar","45","20","2027-12-01",true),
+("3-in-1 Coffee","8","100","2025-05-20",false),
+("Biscuit","15","40","2025-03-12",true),
+("Powdered Milk","60","25","2025-08-10",false),
+("Soy Sauce","20","35","2025-11-01",false),
+("Salt","10","50","2027-11-30",true),
+("Detergent Powder","50","20","2025-09-05",false),
+("Shampoo","30","15","2026-01-20",true),
+("Toothpaste","40","12","2026-03-09",true),
+("Cooking Oil","75","10","2025-07-25",false),
+("Chips","20","60","2025-04-18",true),
+("Mint Candy","5","100","2025-10-10",false),
+("Eggs","80","10","2027-10-20",false),
+("Soft Drink","35","25","2025-02-28",true),
+("Ice Cream","40","20","2027-12-15",false),
+("Bread","20","50","2027-10-22",true),
+("Frozen Chicken","150","5","2025-01-30",true),
+("Canned Tuna","30","40","2025-05-07",false),
+("Toilet Paper","45","15","2025-05-18",true),
+("Cigarette","10","30","2025-06-12",false),
+("Fruit Juice","15","25","2025-09-25",false),
+("Peanuts","20","40","2025-03-30",true),
+("Rice","50","10","2027-08-15",false);
+
+select * from sarisari;
